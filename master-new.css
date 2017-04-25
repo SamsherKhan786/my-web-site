@@ -1,0 +1,302 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* http: //meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin-bottom: 20px;
+    max-width: 600px;
+    min-width: 400px;
+    width: 60%;
+    border:solid 1px #e2e2e2;
+    table-layout:fixed;
+}
+
+TBODY {
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    vertical-align: baseline;
+}
+TR {
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px #e2e2e2;
+    vertical-align: baseline;
+}
+TD, th {
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px #e2e2e2;
+    vertical-align: baseline;
+}
+pre {
+    border: solid 1px #ccc;
+    background-color: #e2e2e2;
+    padding:10px;
+}
+
+/* begin new styles */
+
+html {
+height: 100%;
+}
+
+body {
+height: 100%;
+min-height:100%;
+background-color: #024B80;
+font-family: 'Segoe UI', Segoe, Frutiger, Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+
+#pagepanel {
+background-color: #fff;
+background-image: url('/images/Pubtools_logo.png');
+background-repeat: no-repeat;
+background-position: 20px 10px;
+width: 96.2%;
+min-height: 90%;
+margin: 0 auto 30px auto;
+padding: 24px;
+}
+
+#pageheader {
+margin: 100px 0 0 8px;
+padding: .3em 0 0 0;
+border-top: 4px solid #024B80;
+}
+
+.panelgroup_left {
+float: left;
+background-color: #eaeaea;
+box-shadow: 3px 3px 2px #999999;
+width: 47%;
+margin: 1em 0 0 0;
+padding: 1%;
+}
+
+.panelgroup_right {
+float: right;
+background-color: #eaeaea;
+box-shadow: 3px 3px 2px #999999;
+width: 47%;
+margin: 1em 0 0 0;
+padding: 1%;
+}
+
+.panelgroup_full {
+float: left;
+background-color: #eaeaea;
+box-shadow: 3px 3px 2px #999999;
+width: 94%;
+margin: 1em 0 0 0;
+padding: 1%;
+}
+
+.panelintro {
+margin-bottom: 1em;
+}
+
+.panel {
+float: left;
+min-width: 97%;
+width: inherit;
+background-color: #fff;
+box-shadow: 1px 1px 1px #999999 inset;
+padding: 6px;
+margin: 0;
+border-top: 2px solid #05497e;
+}
+
+.clear{
+clear:both;
+height:0px;
+}
+
+.cells {
+}
+.cell {
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+    width:300px;
+}
+.cell::after{clear:both;}
+.last {margin-right:0;}
+
+#pagefooter {
+clear:both;
+width:100%;
+/* position:absolute;
+bottom: 1.5em; */
+margin:3em 0 0 0;
+text-align:center;
+font-size:90%;
+}
+
+p {
+margin-bottom: 1em;
+}
+
+h1, h2, h3, h4 {
+font-weight: normal;
+color: #05497e;
+line-height: 100%;
+margin-bottom: .5em;
+}
+
+h1 
+{
+    font-size:160%;
+}
+h2 {
+font-size: 140%;
+}
+
+h3 {
+font-size: 120%;
+}
+
+h4 {
+font-size: 105%;
+}
+
+b, strong{
+font-weight:bold;
+}
+
+ol {
+list-style: outside decimal;
+margin: 0 0 1em 2em;
+}
+
+ul {
+list-style: outside disc;
+margin: 0 0 1em 2em;
+}
+
+li {
+margin-bottom: .7em;
+}
+
+ol ul, ul ul {
+list-style: circle;
+margin-top: .7em;
+}
+
+ul.tabs {
+list-style-type: none;
+font-size: 110%;
+line-height:100%;
+margin: 0;
+}
+
+ul.tabs li {
+float: left;
+margin: 0 0 0 2px;
+padding: 4px;
+background-color : #98d0f8;
+color: #05497e;
+}
+
+ul.tabs li:hover {
+cursor:pointer;
+color: #fff;
+background-color: #05497e;
+}
+
+
+.activetab {
+color: #fff;
+background-color: #05497e;
+}
+
+a, a:hover, a:visited {
+text-decoration:none;
+color:#0070FF !important;
+}
+.charttable {
+	border: 1px solid rgb(192, 192, 192); width: 100%; border-collapse: collapse; margin-bottom:1em;
+}
+.charttable th {
+	padding: 3px; border: 1px solid rgb(192, 192, 192); border-collapse: collapse;
+}
+.charttable td {
+	padding: 3px; border: 1px solid rgb(192, 192, 192); border-collapse: collapse;
+}
+.hidden {display:none;}
+
+.firstCol {
+    width:150px;
+}
+tr.even td {
+    background-color:#e2e2e2;
+}
+.section {
+    border-bottom: solid 1px #e2e2e2;
+    padding-top: 20px;
+    clear:both;
+}
+
+/*SMS User Guide*/
+.sms h2 {
+	padding-top:13pt;
+}
+.sms h3 {
+	padding-top:11pt;
+}
+
+.caption 
+{
+    font-weight:bold;
+    padding-bottom:12px;
+}
+
+.note {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border:solid 1px #c8c8c8;
+}
+.jumpTop
+{
+    background: transparent url('../images/arrow-up.gif') no-repeat scroll right 50%;
+    cursor:pointer;
+    padding-right: 15px; text-align: right;
+}
+
+ul.toc_list li {
+    margin-bottom: 0px;
+}
+ul.toc_list a {
+    font-size: .82em;
+    color:#0070FF;
+}
